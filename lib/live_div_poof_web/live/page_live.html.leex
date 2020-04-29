@@ -13,6 +13,14 @@
   </form>
 </section>
 
+<%= live_component @socket, LiveDivPoof.Component, id: "component" %>
+
+<section class="phx-hero">
+  <div id="parent" phx-update="ignore">
+    <div id="myDiv">Bye bye Div</div>
+  </div>
+</section>
+
 <section class="row">
   <article class="column">
     <h2>Resources</h2>
